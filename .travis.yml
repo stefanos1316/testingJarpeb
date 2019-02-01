@@ -12,4 +12,4 @@ matrix:
      - dist: trusty
 
 script:      
-  - java -jar build/Exercise.jar -v ISDI 1 99999 4 38638da3a8e43673432fcd84279d20c7
+  - java -jar Exercise.jar -v ISDI 1 99999 4 38638da3a8e43673432fcd84279d20c7
