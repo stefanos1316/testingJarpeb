@@ -1,0 +1,12 @@
+language: java
+install: ant
+jdk:
+  - oraclejdk8
+  - oraclejdk7
+  - oraclejdk6 
+
+sudo: required
+dist: precise
+
+script:      
+  - java -jar build/Exercise.jar -v ISDI 1 99999 4 38638da3a8e43673432fcd84279d20c7
