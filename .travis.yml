@@ -5,8 +5,12 @@ jdk:
   - oraclejdk7
   - oraclejdk6 
 
-sudo: required
-dist: precise
+matrix:
+   include:
+     - os: linux
+     - dist: precise
+     - os: linux
+     - dist: trusty
 
 script:      
   - java -jar build/Exercise.jar -v ISDI 1 99999 4 38638da3a8e43673432fcd84279d20c7
